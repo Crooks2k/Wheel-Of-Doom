@@ -8,8 +8,9 @@
     box-sizing: border-box;
 }
 body{
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.829);
+    max-width: 100%;
+    background-image: url(../assets/avatar-cards-assets/bg-cards.jpg);
+    background-size: cover;
 }
    /* Var for styles */
 :root {
@@ -26,6 +27,7 @@ h1{font-size: 5rem !important;
 }
 h2{font-size: 5.5em; 
     font-family: 'Games', sans-serif;
+    color: var(--main-color);
 
 }
 h3{font-size: 4.5em; 
@@ -41,3 +43,15 @@ p{
 
 
 /*Style here ( and please comment code for style sections*/
+
+.neonText {
+    text-shadow:    
+      0 0 2px #fff,
+      0 0 3px #fff,
+      0 0 7px #0B5CE1,
+      0 0 10px #0B5CE1,
+      0 0 12px #0B5CE1,
+      0 0 30px #0B5CE1,
+      0 0 45px #0B5CE1; 
+}
+
