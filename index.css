@@ -11,8 +11,7 @@
 }
 body{
     width: 100%;
-    background-image: url(assets/inicio\ assets/bg-inicio.jpg);
-    background-color: rgba(97, 31, 31, 0.829);
+    background-image: url(assets/inicio-assets/bg-inicio.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -85,14 +84,18 @@ p{
 
 /* helmet+ring neon */
 
+#helmet {
+    /* display: flex; */
+
+}
+
  #helmet > img {
     max-width: 50%;
     max-height: 80%;
+
    }
 
-.lightRing {
-    
-}
+
 
 
 
