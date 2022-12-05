@@ -10,6 +10,8 @@
 body{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.829);
+    background-image: url(../assets/player-list-assets/nebulosa-verde-sobre-fondo-galaxia-negra_53876-148417\ 1.png);
+    background-size: cover;
 }
    /* Var for styles */
 :root {
@@ -39,5 +41,112 @@ p{
     margin-bottom: 0px !important;
 }
 
-
 /*Style here ( and please comment code for style sections*/
+.player-list{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+}
+    /* Border animate */
+.border-gradient-animate{
+    max-width: 400px;
+    margin: auto;
+    margin-top: 1rem;
+    border: 6px solid transparent;
+    border-image: linear-gradient(10deg, #16CDB5, #0B5CE1, #16CDB5, #0B5CE1) 1; 
+    transition: all;
+    animation: 6s bordermovement alternate linear;
+}
+    /* Card contain */
+.player-list-card{
+    max-width: 400px;
+    background: var(--bg-container);
+    margin: 0 auto;
+    padding-top: 1.4rem;
+}
+.imagen-halo{
+    width: 120px;
+    height: 110px;
+    border-radius: 100%;
+    background: var(--bg-container);
+    background-image: url(../assets/player-list-assets/WhatsApp\ Image\ 2022-12-03\ at\ 12.01.24\ PM.jpeg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin: auto;
+    box-shadow: 0px 0px 19px -5px #FFFFFF;
+}
+.names{
+    margin-top: 1rem;
+}
+input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #0A5BE0;
+    font-family: 'Zen Dots', cursive;
+    outline: none;
+    color: #FFFFFF;
+}
+input:focus{
+    outline: none;
+}
+.btn-add{
+    width: 20px;
+    border: none;
+    color: #0A5BE0;
+    background-color: transparent;
+    font-size: 17px;
+    border-bottom: 1px solid #0A5BE0;
+    margin-left: -1.2rem;
+    font-weight: 600;
+    text-align: start;
+}
+.start-game{
+    width: 215px;
+    padding: 0.3rem;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #0B5CE1;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    border: 3px #0B5CE1 solid;
+    box-shadow: 0px 0px 19px -9px #0A5BE0;
+    font-weight: 600;
+}
+#message-bot-p{
+    font-size: 13px !important;
+    padding-bottom: 1rem;
+}
+
+/* Cards execut style */
+li p{
+    font-size: 10px;
+    background-color: #1C1513;
+    border-left: 2px#0A5BE0 solid;
+    border-top:2px #0A5BE0 solid;
+    border-bottom: 2px#0A5BE0 solid;
+    width: 151px;
+    padding: 0.5rem;
+    margin-left: -1.89rem;
+    color: #FFFFFF;
+    text-align: start;
+}
+li{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.3rem;
+}
+.btn-delete{
+    width: 45px;
+    border-top: 2px #0A5BE0 solid;
+    border-right: 2px #0A5BE0 solid;
+    border-bottom: 2px #0A5BE0 solid;
+    border-left: none;
+    background-color: #1C1513;
+    color: #0A5BE0;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
