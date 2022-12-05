@@ -10,11 +10,12 @@
 
 }
 body{
-    width: 100%;
+    max-width: 100%;
     background-image: url(assets/inicio-assets/bg-inicio.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
+
    /* Var for styles */
 
 :root {
@@ -49,8 +50,8 @@ p{
 /*Style here ( and please comment code for style sections*/
 
 .container{
-   margin: 2rem;
-   padding: 2rem; 
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    margin: 1.5rem;
    background-color: var(--bg-container);
    border-radius: 1.25rem;
    text-align: center;
@@ -60,7 +61,7 @@ p{
 
 /*neon effect*/
 #neonText {
-    text-shadow:
+    text-shadow:    
       0 0 2px #fff,
       0 0 3px #fff,
       0 0 7px #0B5CE1,
@@ -84,17 +85,38 @@ p{
 
 /* helmet+ring neon */
 
-#helmet {
-    /* display: flex; */
-
-}
-
  #helmet > img {
-    max-width: 50%;
-    max-height: 80%;
-
+    max-width: 60%;
+    max-height: 90%;
    }
 
+#lightRing > img {
+    max-width: 90%;
+    max-height: 70%;
+    margin-top: -5rem;
+    
+}
+
+#helmet {
+    z-index: 10;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+    animation: floating 1.5s forwards infinite linear  alternate-reverse; 
+}
+
+#lightRing {
+    z-index: 5 ;
+}
+
+/*animation helmet*/
+@keyframes floating {
+    from {
+        transform: translateY(0px) ;
+    }
+    to {
+        transform: translateY(-40px);
+    }
+} */
 
 
 
