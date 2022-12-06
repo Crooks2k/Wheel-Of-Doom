@@ -44,6 +44,9 @@ p{
 
 /*Style here ( and please comment code for style sections*/
 
+
+/* NEON TEXT */
+
 .neonText {
     text-shadow:    
       0 0 2px #fff,
@@ -53,5 +56,107 @@ p{
       0 0 12px #0B5CE1,
       0 0 30px #0B5CE1,
       0 0 45px #0B5CE1; 
+}
+
+
+/* botón */
+button {
+    --glow-color: rgba(11, 93, 225, 0.696);
+    --glow-spread-color:#1c62d48e;
+    --enhanced-glow-color: #5c8ddc;
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: #0B5CE1;
+    font-size: 10px;
+    background-color: var(--btn-color);
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    border:none;
+   }
+
+button p{
+    color: #0B5CE1;
+}
+button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: blur(1em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+button:hover {
+    color: var(--btn-color);
+    background-color: #16CDB5;
+    box-shadow: 0 0 1em .25em var(--glow-color),0 0 4em 2em var(--glow-spread-color),inset 0 0 .75em .25em var(--glow-color);
+}
+
+button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),0 0 2.5em 2em var(--glow-spread-color), inset 0 0 .5em .25em var(--glow-color);
+}
+
+
+
+.figure{
+    width: 40vh;
+    height: 100px;
+    transform: skew(-20deg);
+    position: absolute;
+    z-index: -1;
+    border-radius: 15px;
+    background: rgb(29,18,18);
+    background: linear-gradient(180deg, rgba(29,18,18,1) 0%, rgba(36,23,23,0.8130602582830007) 35%, rgba(34,21,21,0.5525560566023284) 55%, rgba(29,18,18,0.19681375968356096) 95%);     
+
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 289px;
+    height: 330px;
+    position: relative;
+    /* width: 100%; */
+}
+
+
+
+.helmet > img {
+    max-width: 20vh;
+    margin: -2.5rem 0.9375rem 0 -3.125rem;
+}
+
+.contenedor-2 {
+    width: 100%;
+    display: flex;
+    padding: 0.8rem 0 0 0;
+    z-index: 10;
+    
+}
+
+.text > p {
+    margin-bottom: 0.5rem;
+}
+
+.text > input {
+    width: 23vh;
+    height: 5vh;
+    background-color: transparent;
+    border: transparent;
+    font-size: 0.5rem; 
+    font-family: 'Zen Dots', cursive;
+    color: var(--third-color);
 }
 
