@@ -13,6 +13,7 @@ body{
     background-size: cover;
 }
    /* Var for styles */
+
 :root {
     --main-color: #0B5CE1;
     --second-color: #16CDB5;
@@ -21,30 +22,31 @@ body{
     --bg-container: rgba(17, 16, 16, 0.792);  
 }
 
-h1{font-size: 5rem !important; 
+
+
+h2{font-size: 3rem !important; 
     font-family: 'Games', sans-serif;
     color: var(--main-color);
-}
-h2{font-size: 5.5em; 
-    font-family: 'Games', sans-serif;
-    color: var(--main-color);
+    text-align: center;
 
 }
-h3{font-size: 4.5em; 
-    font-family: 'Zen Dots', cursive;
-    color: var(--third-color);
-}
+
+
 p{
     font-size: 1.5rem; 
     font-family: 'Zen Dots', cursive;
     color: var(--third-color); 
     margin-bottom: 0px !important;
+    text-align: center;
 }
 
 
 /*Style here ( and please comment code for style sections*/
 
+.container {
+    margin: 4rem auto;
 
+}
 /* NEON TEXT */
 
 .neonText {
@@ -59,8 +61,12 @@ p{
 }
 
 
-/* botón */
-button {
+/* --------------------------botón */
+.play {
+    text-align: center;
+    margin-top: -60px;
+}
+.play > button {
     --glow-color: rgba(11, 93, 225, 0.696);
     --glow-spread-color:#1c62d48e;
     --enhanced-glow-color: #5c8ddc;
@@ -77,12 +83,13 @@ button {
     position: relative;
     transition: all 0.3s;
     border:none;
+    
    }
 
 button p{
     color: #0B5CE1;
 }
-button::after {
+.play > button::after {
     pointer-events: none;
     content: "";
     position: absolute;
@@ -95,18 +102,18 @@ button::after {
     transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
 }
 
-button:hover {
+.play > button:hover {
     color: var(--btn-color);
     background-color: #16CDB5;
     box-shadow: 0 0 1em .25em var(--glow-color),0 0 4em 2em var(--glow-spread-color),inset 0 0 .75em .25em var(--glow-color);
 }
 
-button:active {
+.play > button:active {
     box-shadow: 0 0 0.6em .25em var(--glow-color),0 0 2.5em 2em var(--glow-spread-color), inset 0 0 .5em .25em var(--glow-color);
 }
 
 
-
+/* ---------------carousel */
 .figure{
     width: 40vh;
     height: 100px;
@@ -125,12 +132,11 @@ button:active {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 289px;
-    height: 330px;
+    height: 210px;
     position: relative;
-    /* width: 100%; */
-}
+    
 
+}
 
 
 .helmet > img {
@@ -148,6 +154,7 @@ button:active {
 
 .text > p {
     margin-bottom: 0.5rem;
+    font-size: 1rem;
 }
 
 .text > input {
@@ -159,4 +166,8 @@ button:active {
     font-family: 'Zen Dots', cursive;
     color: var(--third-color);
 }
+
+
+/* -------Light Ring */
+
 
