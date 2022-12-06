@@ -26,6 +26,21 @@ addBtn.addEventListener("click", (e) =>{
 
     //el valor de input se guarda dentro de text
     const text = input.value;
+
+
+
+
+//Desarrollo del guardado de nombres en local storage
+    savedatainput = text //guardar el valor del input el cual se guardara en el array
+    idNewPlayer = arraydatainput.length //guardar el valor de posicion dentro del array
+
+    //copiamos el dato del input y lo pasamos por la funcion para almacenarlo
+    let soundAddPlayer = new Audio("../assets/sounds/addsound.mp3")
+    
+    guardardatosinput() //llamamos funcion que guarda los datos del input en el array
+    guardarEnStorage(arraydatainput); //llamamos funcion que guarda el array en el storage
+    soundAddPlayer.play()
+
     if (text != "" || text.length != 0){
     //creamos un elemento tipo lista y lo guardanmos en li
     const li = document.createElement("li");
@@ -40,7 +55,6 @@ addBtn.addEventListener("click", (e) =>{
     ul.appendChild(li); //agregamos el elemento li a ul
     li.appendChild(addDeleteBtn()) //agregamos la funcion que creamos abajo
     input.value = "";
-    empty.style.display = "none"; //Ocultar mensaje de tareas pendientes
     }}
 })
 
@@ -51,17 +65,39 @@ function addDeleteBtn(){
     deleteBtn.textContent = "✕";
     //asignar clase al const
     deleteBtn.className = "btn-delete";
+
+
     //crear evento
     deleteBtn.addEventListener("click", (e) =>{
-
+        let deletesound = new Audio("../assets/sounds/deletesound.mp3") //sonido al eliminar elemento
+        deletesound.play()
         const item = e.target.parentElement;
         ul.removeChild(item);
 
-        //Mostrar mensaje de tareas pendientes siempre y cuando tenga 0 elementos li, si tiene alguno se ejecutra el codigo del evento de arriba y lo quitara
-        const items = document.querySelectorAll("li");
-        if (items.length === 0){
-            empty.style.display = "block";
-        }
+
+        //borrar ultimo elemento del array
+        arraydatainput.pop()
+        
+        guardarEnStorage(arraydatainput); //llamamos funcion que guarda el array en el storage
     })
     return deleteBtn;
 };
+
+//Funcion para guardar los datos del input en un array
+const arraydatainput = []
+function guardardatosinput(){
+    arraydatainput.push({id: idNewPlayer, playerName: savedatainput, isDead: false}); //guardo el valor del input (sacado de la funcion de + del input inicial) dentro de un array
+    console.log(arraydatainput)
+}
+
+//funcion para guardar en el local storage
+function guardarEnStorage(object) {
+    let playersLocal = object;
+  
+    //Guardamos el array (el cual se colocara como object mas adelante) dentro del localstorage con el nombre playerskey
+    localStorage.setItem("playersKey", JSON.stringify(playersLocal));
+}
+  //info para mas adelante
+
+//let datosDeStorage = JSON.parse(localStorage.getItem("playersKey")); // Traemos el array de jugadores desde el local storage (puede estar lleno o vacío)
+// DATOS
