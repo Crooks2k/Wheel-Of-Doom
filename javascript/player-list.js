@@ -86,8 +86,14 @@ function addDeleteBtn(){
 //Funcion para guardar los datos del input en un array
 const arraydatainput = []
 function guardardatosinput(){
-    arraydatainput.push({id: idNewPlayer, playerName: savedatainput, isDead: false}); //guardo el valor del input (sacado de la funcion de + del input inicial) dentro de un array
-    console.log(arraydatainput)
+    if (arraydatainput.length == 5){
+        alert("Numero maximo de jugadores alcanzados")
+        arraydatainput = arraydatainput.substr(0, arraydatainput.length -1);
+    }
+    else{
+        arraydatainput.push({id: idNewPlayer, playerName: savedatainput, isDead: false}); //guardo el valor del input (sacado de la funcion de + del input inicial) dentro de un array
+        console.log(arraydatainput)
+    }
 }
 
 //funcion para guardar en el local storage
