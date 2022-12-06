@@ -282,13 +282,60 @@ button:active {
     }
   }
 
-  .naves {
-    
-  }
-
+/* ----------------naves */  
 .naves> img {
     width: auto;
     height: auto;
     max-width: 200px;
   
 }
+
+.nav-space-1 , .nav-space-3{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#nave-1, #nave-5 {
+    animation: float-1 2s infinite linear;
+  }
+
+  @keyframes float-1 {
+    from {
+      transform: rotate(0deg) translate3d(40px, 0, 0) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate3d(40px, 0, 0) rotate(-360deg);
+    }
+  }
+
+  #nave-2, #nave-4 {
+    animation: float-2 2s infinite linear;
+  }
+
+  @keyframes float-2 {
+    from {
+        transform: rotate(0deg) translate3d(-40px, 0, 0) rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg) translate3d(-40px, 0, 0) rotate(-360deg);
+      }
+  }
+
+  #nave-3 {
+    animation: float-3 3s infinite linear;
+  }
+
+
+  @keyframes float-3 {
+    from {
+        transform: rotate(0deg) translate3d(-40px, 0, 0) rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg) translate3d(-40px, 0, 0) rotate(-360deg);
+      }
+  }
+
+  
+
+
