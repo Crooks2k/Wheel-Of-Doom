@@ -14,39 +14,131 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="neonText">
-            <h2>Players</h2>
+   <div class="container">
+        <div class="titles">
+            <div class="neonText">
+                <h2>Players</h2>
+            </div>
+            <p>Only one of you is going to win. Play well!</p>
         </div>
-        
-        <p>Only one of you is going to win. Play well!</p>
-        
-        <div>
+        <!-- carousel -->
+        <div class="container" id="carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <!-- card 1 helmet 1 -->
+                    <div class="carousel-item active">
+                
+                        <div class="contenedor" id="card1">
+                            <div class="box">
+                                <div class="figure"></div>
+                                <div class="contenedor-2">
+                                    <div class="helmet">
+                                        <img src="../assets/avatar-cards-assets/casco_1-removebg-preview.png" alt=""> 
+                                    </div>
+                                    <div class="text">
+                                        <p id="text1">Player 1</p>
+                                        <input type="text" name="namePlayer" id="namePlayer1" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+    
+                <!-- card 2 helmet 2 -->
+                    <div class="carousel-item">
+                        <div class="contenedor" id="card2">
+                            <div class="box">
+                                <div class="figure"></div>
+                                <div class="contenedor-2">
+                                    <div class="helmet">
+                                        <img src="../assets/avatar-cards-assets/casco_2-removebg-preview.png" alt=""> 
+                                    </div>
+                                    <div class="text">
+                                        <p id="text1">Player 2</p>
+                                        <input type="text" name="namePlayer" id="namePlayer2" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                <!-- card 3 helmet 3 -->
+                    <div class="carousel-item">
+                        <div class="contenedor" id="card3">
+                            <div class="box">
+                                <div class="figure"></div>
+                                <div class="contenedor-2">
+                                    <div class="helmet">
+                                        <img src="../assets/avatar-cards-assets/casco_3-removebg-preview.png" alt=""> 
+                                    </div>
+                                    <div class="text">
+                                        <p id="text1">Player 3</p>
+                                        <input type="text" name="namePlayer" id="namePlayer3" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                <!-- card 4 helmet 4 -->
+                    <div class="carousel-item">
+                        <div class="contenedor" id="card4">
+                            <div class="box">
+                                <div class="figure"></div>
+                                <div class="contenedor-2">
+                                    <div class="helmet">
+                                        <img src="../assets/avatar-cards-assets/casco_4-removebg-preview.png" alt=""> 
+                                    </div>
+                                    <div class="text">
+                                        <p id="text1">Player 4</p>
+                                        <input type="text" name="namePlayer" id="namePlayer4" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- card 5 helmet 5 -->
+                    <div class="carousel-item">
+                        <div class="contenedor" id="card5">
+                            <div class="box">
+                                <div class="figure"></div>
+                                <div class="contenedor-2">
+                                    <div class="helmet">
+                                        <img src="../assets/avatar-cards-assets/casco_5-removebg-preview.png" alt=""> 
+                                    </div>
+                                    <div class="text">
+                                        <p id="text1">Player 5</p>
+                                        <input type="text" name="namePlayer" id="namePlayer5" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+            
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="lightRing">
+            <img src="../assets/avatar-cards-assets/eclipse.png" alt="">
+        </div>
+
+        <div class="play">
             <button id="button-redirect"><p>PLAY</p></button>
         </div>
-    
-    
-    <!-- card model -->
-    <div class="contenedor" id="card1">
-        <div class="box">
-            <div class="figure">
-    
-            </div>
-            <div class="contenedor-2">
-                <div class="helmet">
-                    <img src="../assets/avatar-cards-assets/casco_1-removebg-preview.png" alt=""> 
-                </div>
-                <div class="text">
-                    <p id="text1">Player 1</p>
-                    <input type="text" name="namePlayer" id="namePlayer1">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- /card model -->
-
-    <!-- carousel -->
+   </div>
 
 
 
