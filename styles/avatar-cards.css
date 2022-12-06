@@ -144,13 +144,24 @@ button p{
     margin: -2.5rem 0.9375rem 0 -3.125rem;
 }
 
+
 .contenedor-2 {
     width: 100%;
     display: flex;
     padding: 0.8rem 0 0 0;
     z-index: 10;
-    
+    animation: floating 1.5s forwards infinite linear  alternate-reverse; 
 }
+
+
+@keyframes floating {
+    from {
+        transform: translateY(0px) ;
+    }
+    to {
+        transform: translateY(-15px);
+    }
+} 
 
 .text > p {
     margin-bottom: 0.5rem;
@@ -169,5 +180,22 @@ button p{
 
 
 /* -------Light Ring */
+
+.lightRing > img {
+    width: auto;
+    height: auto;
+    max-width: 500px;
+}
+
+.caja {
+    margin-top: -150px;
+    margin-bottom: 100px;
+    z-index: -1;
+}
+
+.lightRing {
+    text-align: center;  
+}
+
 
 
