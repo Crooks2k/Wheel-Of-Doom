@@ -50,13 +50,13 @@ p{
 /*Style here ( and please comment code for style sections*/
 
 .container{
-    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
     margin: 1.5rem;
    background-color: var(--bg-container);
    border-radius: 1.25rem;
    text-align: center;
    border: 10px solid transparent;
-   border-image: linear-gradient(10deg, #16CDB5, #0B5CE1, #16CDB5, #0B5CE1) 1; 
+   border-image: linear-gradient(10deg, #16CDB5, #0B5CE1, #16CDB5, #0B5CE1) 1;
 }
 
 /*neon effect*/
@@ -126,11 +126,9 @@ button {
     --enhanced-glow-color: #5c8ddc;
     border: .25em solid var(--glow-color);
     padding: 1em 3em;
-    color: var(--glow-color);
+    color: #0B5CE1;
     font-size: 10px;
-    font-weight: bold;
     background-color: var(--btn-color);
-    border-radius: 1em;
     outline: none;
     box-shadow: 0 0 1em .25em var(--glow-color),
            0 0 4em 1em var(--glow-spread-color),
@@ -138,9 +136,13 @@ button {
     text-shadow: 0 0 .5em var(--glow-color);
     position: relative;
     transition: all 0.3s;
+    border:none;
    }
-   
-   button::after {
+
+button p{
+    color: #0B5CE1;
+}
+button::after {
     pointer-events: none;
     content: "";
     position: absolute;
@@ -148,33 +150,17 @@ button {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--glow-spread-color);
-    filter: blur(2em);
+    filter: blur(1em);
     opacity: .7;
     transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
-   }
-   
-   button:hover {
+}
+
+button:hover {
     color: var(--btn-color);
-    background-color: var(--glow-color);
-    box-shadow: 0 0 1em .25em var(--glow-color),
-           0 0 4em 2em var(--glow-spread-color),
-           inset 0 0 .75em .25em var(--glow-color);
-   }
-   
-   button:active {
-    box-shadow: 0 0 0.6em .25em var(--glow-color),
-           0 0 2.5em 2em var(--glow-spread-color),
-           inset 0 0 .5em .25em var(--glow-color);
-   }
+    background-color: #16CDB5;
+    box-shadow: 0 0 1em .25em var(--glow-color),0 0 4em 2em var(--glow-spread-color),inset 0 0 .75em .25em var(--glow-color);
+}
 
-
-
-
-
-
-
-
-
-
-
+button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),0 0 2.5em 2em var(--glow-spread-color), inset 0 0 .5em .25em var(--glow-color);
+}
