@@ -1,0 +1,294 @@
+@import url('https://fonts.cdnfonts.com/css/games');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/in-game-assets/image\ 14.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+   /* Var for styles */
+
+:root {
+    --main-color: #0B5CE1;
+    --second-color: #16CDB5;
+    --third-color: #FFFFFF;
+    --tittle-color-and-format: #0B5CE1;
+    --bg-container: rgba(17, 16, 16, 0.792);  
+    
+}
+
+h1{font-size: 5rem !important; 
+    font-family: 'Games', sans-serif;
+    color: var(--main-color);
+}
+h2{font-size: 5.5em; 
+    font-family: 'Games', sans-serif;
+
+}
+h3{font-size: 4.5em; 
+    font-family: 'Zen Dots', cursive;
+    color: var(--third-color);
+}
+p{
+    font-size: 1.5rem; 
+    font-family: 'Zen Dots', cursive;
+    color: var(--third-color); 
+    margin-bottom: 0px !important;
+}
+
+
+/*Style here ( and please comment code for style sections*/
+.container{
+    padding: 0rem 1.5rem 2rem 1.5rem;
+    margin: 1.5rem;
+    background-color: var(--bg-container);
+    border-radius: 1.25rem;
+    text-align: center;
+    border: 10px solid transparent;
+    border-image: linear-gradient(10deg, #16CDB5, #0B5CE1, #16CDB5, #0B5CE1) 1;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+    /* Style helmet head */
+header{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /* width: 100%; */
+}
+
+.helmet > img {
+   width: 80px;
+   height: 80px;
+}
+
+.contenedor-2 {
+    width: 100%;
+    display: flex;
+    z-index: 10;
+}
+
+.text{
+    padding-top: 1rem;
+}
+.text > p {
+    width: 6em;
+    padding-left: 0.5rem;
+}
+
+.text > input {
+    width: 23vh;
+    height: 5vh;
+    background-color: transparent;
+    border: transparent;
+    font-size: 0.5rem; 
+    font-family: 'Zen Dots', cursive;
+    color: var(--third-color);
+}
+.barrita-palito{
+    padding-top: 2rem;
+    margin-left: 3rem;
+}
+    /* Cascos de la derecha */
+.cascos-img{
+    display: flex;
+    justify-content: end;
+}
+.cascos-img div{
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+}
+#casco1,#casco2,#casco3,#casco4{
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: end;
+    margin-top: 1.7rem;
+}
+#casco1{
+    background-image: url(../assets/instructions-game/casco-1.png);
+}
+#casco2{
+    background-image: url(../assets/instructions-game/casco-2.png);
+    
+}
+#casco3{
+    background-image: url(../assets/instructions-game/casco-3.png);
+    
+}
+#casco4{
+    background-image: url(../assets/instructions-game/casco-4.png);
+    
+}
+   /* middle text */
+.middle-tittle{
+    text-align: center;
+}
+.middle-text{
+    text-align: center;
+    width: 27em;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#middle-container{
+    border: 0;
+    background-color: transparent;
+    padding-bottom: 2rem;
+}
+.middle-light-form{
+    margin-top: -3rem;
+    padding-top: 2rem;
+    clip-path: polygon(31% 0%, 67% 0%, 100% 100%, 0% 100%);
+    background: linear-gradient(180deg, #000000 0%, rgba(40, 40, 40, 0.37) 38.72%, rgba(132, 129, 129, 0) 80.75%);
+}
+
+   /* text courve */
+.middle-text, .middle-tittle{
+    transform: rotatex(40deg);
+}
+
+/* button */
+button {
+    --glow-color: rgba(11, 93, 225, 0.696);
+    --glow-spread-color:#1c62d48e;
+    --enhanced-glow-color: #5c8ddc;
+    border: .25em solid var(--glow-color);
+    padding: 0.5em 5em;
+    color: #0B5CE1;
+    font-size: 10px;
+    background-color: var(--btn-color);
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    border:none;
+   }
+
+button p{
+    color: #0B5CE1;
+}
+button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: blur(1em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+button:hover {
+    color: var(--btn-color);
+    background-color: #16CDB5;
+    box-shadow: 0 0 1em .25em var(--glow-color),0 0 4em 2em var(--glow-spread-color),inset 0 0 .75em .25em var(--glow-color);
+}
+
+button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),0 0 2.5em 2em var(--glow-spread-color), inset 0 0 .5em .25em var(--glow-color);
+}
+
+/* Radar */
+
+.loader {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.55);
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .loader::before {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    background: transparent;
+    border: 1px dashed#444;
+    border-radius: 50%;
+    box-shadow: inset -5px -5px 25px rgba(0,0,0,0.25),
+    inset 5px 5px 35px rgba(0,0,0,0.25);
+  }
+  
+  .loader::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px dashed#444;
+    box-shadow: inset -5px -5px 25px rgba(0,0,0,0.25),
+    inset 5px 5px 35px rgba(0,0,0,0.25);
+  }
+  
+  .loader span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    transform-origin: top left;
+    animation: radar81 2s linear infinite;
+    border-top: 1px dashed #fff;
+  }
+  
+  .loader span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #16CDB5;
+    transform-origin: top left;
+    transform: rotate(-55deg);
+    filter: blur(30px) drop-shadow(20px 20px 20px #16CDB5);
+  }
+  
+  @keyframes radar81 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .naves {
+    
+  }
+
+.naves> img {
+    width: auto;
+    height: auto;
+    max-width: 200px;
+  
+}
