@@ -7,10 +7,10 @@ function openPopup () {
 
 function closePopup () {
     popup.classList.remove("open-popup")
-    
+    soundshield.play()
 }
-
-//eliminar naves
+let soundshield = new Audio("../assets/sounds/recharge-shield.mp3")
+//eliminar navesp3
 function nave1del(){
     document.getElementById("nave-1").style.display = "none"
     explosion.play()
@@ -18,6 +18,9 @@ function nave1del(){
 function nave2del(){  //nave ganadora
     document.getElementById("nave-2").style.display = "none"
     explosion.play()
+    setTimeout(() => {
+        
+    }, 2000);
 }
 function nave3del(){
     document.getElementById("nave-3").style.display = "none"
@@ -45,4 +48,7 @@ function actualizardato(){
     i++
     nameplayer = datosExtradoidosStorage[i]
     document.getElementById("namePlayer1").value = nameplayer.playerName
+}
+function wingame(){
+    location.href = "../pages/end-game credits.html"
 }
