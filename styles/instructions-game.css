@@ -163,22 +163,25 @@ header{
     padding-top: 2rem;
     clip-path: polygon(31% 0%, 67% 0%, 100% 100%, 0% 100%);
     background: linear-gradient(180deg, #000000 0%, rgba(40, 40, 40, 0.37) 38.72%, rgba(132, 129, 129, 0) 80.75%);
-    animation: crescendo 2s alternate ease-in;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    animation: crece 2seg ;
+    
 }
 
 
-@keyframes crescendo {
+@keyframes crece {
     0%   {
-        transform: scale(0.1);
-        opacity: 0;}
+        opacity: 0;
+      }
 
-    50% {
-        transform: scale(0.5);
-    }
-
+   
     100% {
-        transform: scale(1);
-        opacity: 1;}
+        opacity: 1;
+        
+    }
   }
 
 
