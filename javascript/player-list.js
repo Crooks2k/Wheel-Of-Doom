@@ -84,16 +84,22 @@ function addDeleteBtn(){
 };
 
 //Funcion para guardar los datos del input en un array
+let popup3 = document.getElementById("Popup-3");
 const arraydatainput = []
 function guardardatosinput(){
     if (arraydatainput.length == 5){
-        alert("Numero maximo de jugadores alcanzados")
+        // alert("Numero maximo de jugadores alcanzados")
+        popup3.classList.add("thirdPopup")
         arraydatainput = arraydatainput.substr(0, arraydatainput.length -1);
     }
     else{
         arraydatainput.push({id: idNewPlayer, playerName: savedatainput, isDead: false}); //guardo el valor del input (sacado de la funcion de + del input inicial) dentro de un array
         console.log(arraydatainput)
     }
+}
+
+function closePopup () {
+    popup3.classList.remove("thirdPopup")
 }
 
 //funcion para guardar en el local storage

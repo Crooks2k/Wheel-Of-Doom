@@ -1,14 +1,15 @@
 //Boton redireccion player list to player avatar cards
 
 let popup = document.getElementById("popUp");
-let popup2 = document.getElementById("popUp2");
+let popup2 = document.getElementById("secondPopUp");
 
 function llamarindexbut(){
     if(arraydatainput == ""){
         popup.classList.add("open-popup")
     }
     else if(arraydatainput.length < 5){
-        alert("Se requieren 5 jugadores")
+        // alert("Se requieren 5 jugadores")
+        popup2.classList.add("secondPopup")
     }
     else{
         location.href="../pages/avatar-cards.html"
@@ -17,6 +18,10 @@ function llamarindexbut(){
 
 function closePopup () {
     popup.classList.remove("open-popup")
+}
+
+function closePopup () {
+    popup2.classList.remove("secondPopup")
 }
 //math
 //metodos de arrays
