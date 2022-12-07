@@ -168,8 +168,8 @@ button:active {
 /* ----------------------------Responsive */
 
 @media screen and (max-width: 576px) { /*cuando llegue a tantos pixeles se aplicaran lso cambios*/
-    h1 {
-      font-size: 10px;  
+    button p{
+        color: #0B5CE1;
     }
 }
     
