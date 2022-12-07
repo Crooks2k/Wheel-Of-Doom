@@ -71,7 +71,6 @@ header{
     align-items: center;
     flex-direction: column;
     position: relative;
-    /* width: 100%; */
 }
 
 .helmet > img {
@@ -150,7 +149,10 @@ header{
     justify-content: center;
     align-items: center;
     margin: auto;
+
 }
+
+
 #middle-container{
     border: 0;
     background-color: transparent;
@@ -161,7 +163,29 @@ header{
     padding-top: 2rem;
     clip-path: polygon(31% 0%, 67% 0%, 100% 100%, 0% 100%);
     background: linear-gradient(180deg, #000000 0%, rgba(40, 40, 40, 0.37) 38.72%, rgba(132, 129, 129, 0) 80.75%);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    animation: crece 2seg ;
+    
 }
+
+
+@keyframes crece {
+    0%   {
+        opacity: 0;
+      }
+
+   
+    100% {
+        opacity: 1;
+        
+    }
+  }
+
+
+
 
    /* text courve */
 .middle-text, .middle-tittle{
