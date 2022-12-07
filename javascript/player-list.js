@@ -13,7 +13,7 @@ const ul = document.querySelector("ul");
 //lista vacia (mensaje de lista vacia)
 const empty = document.querySelector(".empty")
 
-
+document.get
 //eventos (son las acciones que se hacen: modificar, agregar, eliminar)
 
 //eventlistener se refiere a un llamado que esta pendiente de la actividad sobre el elemento para ejecutar algo

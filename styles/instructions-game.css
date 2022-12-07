@@ -92,15 +92,18 @@ header{
     width: 6em;
     padding-left: 0.5rem;
 }
-
+#text1{
+    color:#16CDB5;
+}
 .text > input {
     width: 23vh;
     height: 5vh;
     background-color: transparent;
     border: transparent;
-    font-size: 0.5rem; 
+    font-size: 1rem; 
     font-family: 'Zen Dots', cursive;
     color: var(--third-color);
+    text-align: center;
 }
 .barrita-palito{
     padding-top: 2rem;

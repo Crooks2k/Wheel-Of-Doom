@@ -16,5 +16,5 @@ document.getElementById("namePlayer5").value = nameplayer5.playerName
 
 //Funcion para redirijir a la pantalla InGame
 function llamarindexbut(){
-    window.location.href="../pages/in-game.html"
+    window.location.href="../pages/instructions-game.html"
 }
