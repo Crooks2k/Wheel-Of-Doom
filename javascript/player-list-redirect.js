@@ -16,11 +16,11 @@ function llamarindexbut(){
     }
 };
 
-function closePopup () {
+function closePopup1 () {
     popup.classList.remove("open-popup")
 }
 
-function closePopup () {
+function closePopup2() {
     popup2.classList.remove("secondPopup")
 }
 //math

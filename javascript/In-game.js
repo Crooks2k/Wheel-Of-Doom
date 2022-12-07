@@ -52,3 +52,8 @@ function actualizardato(){
 function wingame(){
     location.href = "../pages/end-game credits.html"
 }
+
+//meter valor de name player al span del popup
+// function addspanpop(){
+//     document.getElementById('player-nick').innerHTML = nameplayer.playerName;
+// }
