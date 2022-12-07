@@ -98,7 +98,7 @@ function guardardatosinput(){
     }
 }
 
-function closePopup () {
+function closePopup3(){
     popup3.classList.remove("thirdPopup")
 }
 
