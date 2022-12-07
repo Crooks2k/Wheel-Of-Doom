@@ -5,7 +5,7 @@ let nameplayer = datosExtradoidosStorage[0]
 document.getElementById("namePlayer1").value = nameplayer.playerName
 
 function returngame(){
-    window.location.href="../pages/in-game.html"
+    location.href="./pages/in-game.html"
     datosExtradoidosStorage.shift()
 }
 
