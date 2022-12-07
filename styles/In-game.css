@@ -57,7 +57,7 @@ p{
     border: 10px solid transparent;
     border-image: linear-gradient(10deg, #16CDB5, #0B5CE1, #16CDB5, #0B5CE1) 1;
     margin-bottom: 0;
-    padding-bottom: 0;
+    padding-bottom: 1rem;
 }
     /* Style helmet head */
 header{
@@ -97,9 +97,13 @@ header{
     height: 5vh;
     background-color: transparent;
     border: transparent;
-    font-size: 0.5rem; 
+    font-size: 1rem; 
     font-family: 'Zen Dots', cursive;
     color: var(--third-color);
+    text-align: center;
+}
+#text1{
+    color: #16CDB5;
 }
 .barrita-palito{
     padding-top: 2rem;
@@ -291,12 +295,19 @@ button:active {
   
 }
 
-.nav-space-1 , .nav-space-3{
+.nav-space-1{
     display: flex;
     justify-content: space-around;
 }
 
-
+#nave-5{
+    margin-left: 8rem;
+}
+.nav-space-3{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2rem;
+}
 #nave-1, #nave-5 {
     animation: float-1 2s infinite linear;
   }
@@ -439,9 +450,10 @@ button > p {
     font-size: 15px;
 }
 
-
-  
-
-  
-
-
+/*Arma*/
+.imagen-arma{
+    position: absolute;
+    bottom: -8%;
+    right: 0%;
+    z-index: 10;
+}

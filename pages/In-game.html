@@ -10,6 +10,9 @@
     <title>Wheel Of Doom</title>
 </head>
 <body>
+    <div class="imagen-arma">
+        <img src="../assets/in-game-assets/arma-removebg-preview.png">
+    </div>
     <div class="container">
         <div class="container-body">
             <header>
@@ -23,7 +26,7 @@
                                         <img src="../assets/avatar-cards-assets/casco_1-removebg-preview.png" alt=""> 
                                     </div>
                                     <div class="text">
-                                        <p id="text1">Player 1</p>
+                                        <p id="text1">Player</p>
                                         <input type="text" name="namePlayer" id="namePlayer1" disabled>
                                     </div>
                                 </div>
@@ -46,7 +49,7 @@
 
             <div class="naves">
                 <div class="nav-space-1">
-                    <div  class="naves" id="nave-1" onclick="openPopup()">
+                    <div  class="naves" id="nave-1" onclick="openPopup(),nave1del(),actualizardato()" >
                         <img src="../assets/in-game-assets/nave.png">
                     </div>
                     <div class="naves" id="nave-2">
@@ -54,15 +57,15 @@
                     </div>
                 </div>
                 <div class="nav-space-2">
-                    <div class="naves" id="nave-3" onclick="openPopup()">
+                    <div class="naves" id="nave-3" onclick="openPopup(),nave3del(),actualizardato()">
                         <img src="../assets/in-game-assets/nave.png">
                     </div>
                 </div>
                 <div class="nav-space-3">
-                    <div class="naves" id="nave-4" onclick="openPopup()" >
+                    <div class="naves" id="nave-4" onclick="openPopup(),nave4del(),actualizardato()" >
                         <img  src="../assets/in-game-assets/nave.png">
                     </div>
-                    <div class="naves" id="nave-5" onclick="openPopup()">
+                    <div class="naves" id="nave-5" onclick="openPopup(),nave5del(),actualizardato()">
                         <img src="../assets/in-game-assets/nave.png">
                     </div>  
                 </div>
@@ -95,26 +98,8 @@
         <img src="../assets/in-game-assets/teletransportador-removebg-preview.png" alt="">
     </div>
 
-
-    
-    
-    <script>
-        
-    let popup = document.getElementById("popUp");
-
-    function openPopup () {
-        popup.classList.add("open-popup")
-    }
-
-    function closePopup () {
-        popup.classList.remove("open-popup")
-    }
-
-
-
-    </script>
-
-
+    <!-- JavaScript -->
+    <script src="../javascript/In-game.js"></script>
     <!-- Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
