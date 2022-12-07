@@ -151,8 +151,6 @@ header{
     margin: auto;
 
 }
-
-
 #middle-container{
     border: 0;
     background-color: transparent;
@@ -163,30 +161,29 @@ header{
     padding-top: 2rem;
     clip-path: polygon(31% 0%, 67% 0%, 100% 100%, 0% 100%);
     background: linear-gradient(180deg, #000000 0%, rgba(40, 40, 40, 0.37) 38.72%, rgba(132, 129, 129, 0) 80.75%);
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
-    animation: crece 2seg ;
-    
+    animation: 5s spawn-text ease-in;
 }
 
-
-@keyframes crece {
-    0%   {
+@keyframes spawn-text{
+    0%{
         opacity: 0;
-      }
-
-   
-    100% {
-        opacity: 1;
-        
     }
-  }
-
-
-
-
+    20%{
+        opacity: 0.3;
+    }
+    40%{
+        opacity: 0.5;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
    /* text courve */
 .middle-text, .middle-tittle{
     transform: rotatex(40deg);
@@ -310,3 +307,8 @@ button:active {
       transform: rotate(360deg);
     }
   }
+
+/*Media queris*/
+@media(max-width:800px){
+    
+}
