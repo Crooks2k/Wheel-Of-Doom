@@ -179,5 +179,17 @@ button:active {
     p{
         font-size: 1rem; 
     }
+
+    #helmet > img {
+        max-width: 60%;
+        max-height: 90%;
+       }
+    
+    #lightRing > img {
+        max-width: 90%;
+        max-height: 70%;
+        margin-top: -5rem;
+        
+    }
 }
     
