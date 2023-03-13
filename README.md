@@ -4,7 +4,6 @@ Proyect #4 - Wheel of doom - <a href="https://wheel-of-doom-proyect.netlify.app/
 This proyect was create in five days, at development was distributed in 3 group members <br>
 - <a href="https://github.com/Crooks2k/">Daniel Veloza</a><br>
 - <a href="https://github.com/valentinapuentesgarzon">Val Puentes</a><br>
-- <a href="https://github.com/gris1998">Grisel</a><br>
 <hr>
 This develepment have six pages (inicio, player list, avatar cards, instrucciones-pre-game, In-game, End-game)<hr>
 <strong>Design / inspirations and Backlog</strong><br>
